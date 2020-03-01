@@ -73,7 +73,7 @@ class Http {
             }
         }
 
-        $_POST['http_server'] = $this->http;
+        $_POST['http_server'] = $this->http; //启动这个服务的时候$_post中存入$http_server;主要是在逻辑代码中可以调用task任务
 
         ob_start();
         // 执行应用并响应
